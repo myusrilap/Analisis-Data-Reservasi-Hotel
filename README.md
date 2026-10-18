@@ -13,7 +13,7 @@ Catatan: *Raw data* tidak dilampirkan dalam repositori ini karena batasan ukuran
 * **Analisis & Statistik:** *Exploratory Data Analysis* (EDA), A/B Testing (Uji T-test, KS Test, Levene Test)
 * **Lainnya:** Pemodelan Proses Bisnis (BPMN)
 
-## 🗂️ Struktur Repositori
+##  Struktur Repositori
 ```text
 ├── data/
 │   └── data_cleaned.csv         # Dataset hasil pembersihan (siap pakai)
@@ -26,3 +26,26 @@ Catatan: *Raw data* tidak dilampirkan dalam repositori ini karena batasan ukuran
 │   ├── pola_pendapatan.png
 │   └── pemesanan_last_minute.png
 └── README.md
+```
+## Insight & Temuan Utama
+1. Pola Pembatalan & Lead Time
+City Hotel memiliki tingkat pembatalan yang lebih tinggi dibanding Resort Hotel. Rasio pembatalan berbanding lurus dengan panjangnya lead time; reservasi yang dilakukan jauh hari (91+ hari) memiliki kemungkinan batal tertinggi (mencapai ~51%).
+
+(Pastikan file rasio_pembatalan.png sudah diunggah ke dalam folder images)
+
+2. Kinerja Pendapatan (ADR)
+Melalui Uji A/B (T-statistic: 25.57, p-value < 0.05), terbukti ada perbedaan signifikan dalam ADR antara kedua hotel. City Hotel memiliki tren pendapatan yang relatif stabil sepanjang tahun, sedangkan Resort Hotel sangat fluktuatif dan bergantung pada musim (mencapai puncak pada bulan Agustus).
+
+(Pastikan file pola_pendapatan.png sudah diunggah ke dalam folder images)
+
+3. Tren Pemesanan Last-Minute
+Pemesanan yang dilakukan secara mendadak atau mendekati hari kedatangan (<= 3 hari) lebih didominasi oleh pelanggan City Hotel (sekitar ~5.000 pemesanan) dibandingkan Resort Hotel (sekitar ~4.500 pemesanan).
+
+(Pastikan file pemesanan_last_minute.png sudah diunggah ke dalam folder images)
+
+## Rekomendasi Bisnis
+Penyesuaian Kebijakan Pembatalan: Memperketat kebijakan fleksibilitas pembatalan atau memberlakukan sistem deposit untuk pemesanan dengan lead time panjang (>90 hari) guna menekan tingginya angka cancellation.
+
+Strategi Harga Musiman (Dynamic Pricing): Resort Hotel perlu lebih responsif dalam menerapkan strategi harga untuk memaksimalkan margin di bulan ramai (Juli-Agustus) dan menawarkan paket promo di bulan sepi (Oktober-Januari).
+
+Optimalisasi Promo Last-Minute: Mengingat tingginya angka pemesanan last-minute terutama di City Hotel, manajemen dapat merancang strategi upselling (seperti penawaran sarapan atau upgrade fasilitas) pada saat check-in untuk memaksimalkan pendapatan dari tamu yang memesan secara mendadak.
