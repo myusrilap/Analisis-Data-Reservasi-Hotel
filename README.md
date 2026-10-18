@@ -36,12 +36,12 @@ City Hotel memiliki tingkat pembatalan yang lebih tinggi dibanding Resort Hotel.
 2. Kinerja Pendapatan (ADR)
 Melalui Uji A/B (T-statistic: 25.57, p-value < 0.05), terbukti ada perbedaan signifikan dalam ADR antara kedua hotel. City Hotel memiliki tren pendapatan yang relatif stabil sepanjang tahun, sedangkan Resort Hotel sangat fluktuatif dan bergantung pada musim (mencapai puncak pada bulan Agustus).
 
-![Grafik Pola Pendapatan](images/rata-rataadr.png)
+![Grafik Pola Pendapatan](images/rata-rata-adr.png)
 
 3. Tren Pemesanan Last-Minute
 Pemesanan yang dilakukan secara mendadak atau mendekati hari kedatangan (<= 3 hari) lebih didominasi oleh pelanggan City Hotel (sekitar ~5.000 pemesanan) dibandingkan Resort Hotel (sekitar ~4.500 pemesanan).
 
-(Pastikan file pemesanan_last_minute.png sudah diunggah ke dalam folder images)
+![Grafik Pemesanan](images/last-minute-barchart.png)
 
 ## Rekomendasi Bisnis
 1. Penyesuaian Kebijakan Pembatalan: Memperketat kebijakan fleksibilitas pembatalan atau memberlakukan sistem deposit untuk pemesanan dengan lead time panjang (>90 hari) guna menekan tingginya angka cancellation.
